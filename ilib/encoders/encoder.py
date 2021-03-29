@@ -8,18 +8,9 @@ import numpy as np
 import math
 # from base import Base
 # import utils
-from pipe import Pipe, PerPipe
 
 class Encoder(Module):
 
-	@property
-	def pencode(self): return PerPipe(self.encode)
-	pe = pencode
-	@property
-	def pdecode(self): return PerPipe(self.decode)
-	pd = pdecode
-
-	
 	# @property
 	# def vsize(self): raise NotImplementedError
 	# @property
